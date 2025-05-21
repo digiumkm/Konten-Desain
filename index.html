@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DigiUMKM | Digitalisasi UMKM</title>
+  <meta name="author" content="DigiUMKM">
+  <link rel="canonical" href="https://www.digiumkm.id/" />
+  <meta name="description" content="DigiUMKM - DigiUMKM hadir sebagai solusi digital terpercaya untuk para pelaku UMKM di seluruh Indonesia. " />
+	<meta name="keywords" content="Digi, Digitalisasi, umkm, digiumkm, karya digital, desainer, website digital, pengelolaan media sosial,desain konten" />
+  <link rel="icon" href="https://www.digiumkm.id/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  
+  <style>
+    
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: linear-gradient(to bottom, #f3f4f6, #e0e7ff); color: #333; scroll-behavior: smooth; }
+    header { background: linear-gradient(to right, #2563eb, #4f46e5); color: white; text-align: center; padding: 2rem 1rem; }
+    header h1 { font-size: 2.5rem; }
+    nav { background: #1e40af; display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; padding: 0.75rem; }
+    nav a { color: white; text-decoration: none; padding: 0.5rem 1rem; border-radius: 5px; transition: 0.3s; }
+    nav a:hover { background: rgba(255,255,255,0.2); }
+    section { padding: 4rem 1rem; max-width: 1100px; margin: auto; }
+    h2 { text-align: center; font-size: 2rem; margin-bottom: 2rem; }
+    .grid { display: grid; gap: 2rem; }
+    .services, .packages { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    .card { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); opacity: 0; transform: translateY(30px); transition: 0.6s ease-in-out; }
+    .card.visible { opacity: 1; transform: translateY(0); }
+    .card h3 { margin-bottom: 0.75rem; color: #1e3a8a; }
+    .card ul { list-style: disc; padding-left: 1.2rem; }
+    .btn { display: inline-block; background: #2563eb; color: white; padding: 0.75rem 1.5rem; border-radius: 6px; text-decoration: none; margin-top: 1rem; transition: 0.3s; }
+    .btn:hover { background: #1d4ed8; }
+    .order-btn { background: #16a34a; padding: 0.6rem 1.2rem; border-radius: 5px; color: white; text-decoration: none; display: inline-block; margin-top: 1rem; }
+    .order-btn:hover { background: #15803d; }
+    footer { background: #1e3a8a; color: white; padding: 3rem 1rem; margin-top: 3rem; position: relative; }
+    footer .footer-grid { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem; max-width: 1100px; margin: auto; }
+    footer .footer-section h4 { margin-bottom: 0.5rem; font-size: 1.2rem; }
+    footer .footer-section a { color: #94a3b8; text-decoration: none; display: block; margin: 0.3rem 0; font-size: 0.95rem; }
+    footer .footer-section a:hover { color: white; }
+    footer .bottom { text-align: center; margin-top: 2rem; font-size: 0.9rem; color: #94a3b8; }
+    .contact-form { display: flex; flex-direction: column; gap: 1rem; max-width: 500px; margin: auto; }
+    .contact-form input, .contact-form textarea { padding: 0.75rem; border: 1px solid #ccc; border-radius: 6px; }
+    #beranda {
+  width: 100%;
+  overflow: hidden;
+  @media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .swiper {
+    height: 240px !important;
+  }
+
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .card {
+    padding: 1.2rem;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+
+  .btn,
+  .order-btn {
+    width: auto;
+    text-align: center;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  footer .footer-grid {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .swiper-slide img {
+    object-position: center;
+  }
+}
+
+}
+
+
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DigiUMKM</h1>
+    <p><h3>"Mendigitalisasi UMKM, Meningkatkan Potensi"</h3></p>
+   <!-- Swiper Slider -->
+<div class="swiper mySwiper" style="width: 100%; max-width: 900px; height: 540px; margin: 2rem auto; border-radius: 12px; overflow: hidden;">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="https://fast.image.delivery/nbxsmre.png" alt="Slide 1" style="width:100%; height:100%; object-fit: cover;"></div>
+      <div class="swiper-slide"><img src="https://fast.image.delivery/tmwrvti.png" alt="Slide 2" style="width:100%; height:100%; object-fit: cover;"></div>
+      <div class="swiper-slide"><img src="https://fast.image.delivery/nrlpyqo.png" alt="Slide 3" style="width:100%; height:100%; object-fit: cover;"></div>
+    </div>
+    <!-- Pagination Bullets -->
+    <div class="swiper-pagination" style="bottom: 10px;"></div>
+  </div>
+  
+  </header>
+  <nav>
+   
+  
+    <!-- Optional Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+</script>
+  </nav>
+
+  <section id="tentang" style="padding: 2rem;">
+    <h2 style="text-align: center;">Selamat Datang di DigiUMKM</h2>
+    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 2rem; margin-top: 1.5rem;">
+      
+      <!-- Teks di Kiri -->
+      <div style="flex: 1; min-width: 280px;">
+        <p>DigiUMKM hadir sebagai solusi digital terpercaya untuk para pelaku UMKM di seluruh Indonesia. Kami membantu bisnis kecil dan menengah tampil lebih profesional di era digital, mulai dari pengelolaan media sosial, desain konten, hingga pembuatan website dan optimasi SEO lokal. Dengan tim berpengalaman dan teknologi terkini, kami siap mendampingi pertumbuhan bisnis Anda secara konsisten dan berkelanjutan. <strong>Konsultasi awal 100% gratis</strong> – ayo mulai transformasi digital bisnis Anda sekarang!</p>
+        <div style="margin-top: 1rem;">
+          <a href="https://wa.me/6283194425559?text=Halo%20saya%20ingin%20order%20Paket%20Pro" class="btn">Konsultasi Gratis</a>
+        </div>
+      </div>
+  
+      <!-- Gambar di Kanan -->
+      <div style="flex: 1; min-width: 280px; text-align: center;">
+        <img src="https://fast.image.delivery/euoopzm.png" alt="Tentang DigiUMKM" style="max-width: 70%; height: auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
+      </div>
+  
+    </div>
+  </section>
+  
+
+  <section style="padding: 2rem; background-color: #f1f5f9; text-align: center;">
+    <h2 style="font-size: 2rem; margin-bottom: 2rem; font-weight: bold;">Layanan Kami</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;">
+  
+      <!-- Manajemen Media Sosial -->
+      <div style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); max-width: 300px;">
+        <h3 style="color: #1e3a8a; font-weight: bold;">Manajemen Media Sosial</h3>
+        <p style="margin: 0.75rem 0;">Kami bantu Anda membangun citra brand yang kuat dan profesional di media sosial. Tim kami akan mengelola konten, caption, hingga jadwal posting yang konsisten — biarkan bisnis Anda lebih menonjol dan terpercaya di mata pelanggan.</p>
+        <a href="manajemenmediasosial.html" style="display: inline-block; margin-top: 1rem; padding: 0.5rem 1rem; background-color: #2563eb; color: white; border-radius: 5px; text-decoration: none;">Lihat Detail</a>
+      </div>
+  
+      <!-- Konten AI & Desain -->
+      <div style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); max-width: 300px;">
+        <h3 style="color: #1e3a8a; font-weight: bold;">Konten & Desain</h3>
+        <p style="margin: 0.75rem 0;">Perpaduan antara teknologi kecerdasan buatan dan sentuhan kreatif desainer kami menghasilkan konten yang unik, menarik, dan sesuai tren. Cocok untuk meningkatkan engagement serta memperkuat identitas visual bisnis Anda.</p>
+        <a href="konten.html" style="display: inline-block; margin-top: 1rem; padding: 0.5rem 1rem; background-color: #2563eb; color: white; border-radius: 5px; text-decoration: none;">Lihat Detail</a>
+      </div>
+  
+      <!-- Website & SEO Lokal -->
+      <div style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); max-width: 300px;">
+        <h3 style="color: #1e3a8a; font-weight: bold;">Website & SEO Lokal</h3>
+        <p style="margin: 0.75rem 0;">Miliki website profesional lengkap dengan optimasi SEO lokal agar bisnis Anda mudah ditemukan di Google oleh calon pelanggan di sekitar Anda. Cocok untuk memperluas jangkauan dan membangun kredibilitas online.</p>
+        <a href="seolokal.html" style="display: inline-block; margin-top: 1rem; padding: 0.5rem 1rem; background-color: #2563eb; color: white; border-radius: 5px; text-decoration: none;">Lihat Detail</a>
+      </div>
+  
+    </div>
+  </section>
+
+  <section id="paket">
+    <h2>Paket Layanan</h2>
+    <div class="grid packages">
+      <div class="card">
+        <h3>💼 Paket Basic</h3>
+        <p><h4>💰 Rp 299.000 / bulan</h4></p>
+        <p>Cocok untuk UMKM pemula yang ingin mulai tampil di media sosial secara konsisten.</p>
+        <ul><li>8 Konten desain siap unggah hasil kreasi tim kreatif kami.</li><li>Caption dan hashtag yang relevan & menarik dirancang untuk meningkatkan interaksi.</li><li>1x Revisi gratis</li></ul>
+        <p> <h4>Bantu UMKM tampil profesional meski dengan budget terbatas.</h4></p>
+        <div></div>
+        <a href="https://wa.me/6283194425559?text=Halo%20saya%20ingin%20order%20Paket%20Basic" class="order-btn">Order Sekarang</a>
+      </div>
+      <div class="card">
+        <h3>🚀 Paket Pro</h3>
+        <p><h4>💰 Rp 599.000 / bulan</h4></p>
+        <p>Untuk UMKM yang ingin naik level dengan konten yang lebih variatif dan strategi yang lebih matang.</p>
+        <ul><li>16 Konten kreatif + 2 Reels per bulan</li><li>Optimasi caption untuk interaksi maksimal</li><li>Penjadwalan posting & saran strategi</li></ul>
+        <p> <h4> Bangun brand awareness dan engagement yang lebih tinggi.</h4></p>
+        <a href="https://wa.me/6283194425559?text=Halo%20saya%20ingin%20order%20Paket%20Pro" class="order-btn">Order Sekarang</a>
+      </div>
+      <div class="card">
+      <h3>🌐 Paket Website</h3>
+      <p><h4>💰 Rp 899.000 (1x bayar)</h4></p>
+      <p>Untuk UMKM yang ingin hadir secara online & tampil di Google.</p>
+      <ul><li>Landing Page profesional dengan desain modern</li><li>Form kontak langsung ke WhatsApp</li><li>SEO Lokal agar mudah ditemukan di Google</li></ul>
+      <p> <h4> Meningkatkan kredibilitas & jangkauan bisnis Anda secara digital.</h4></p>
+      <a href="https://wa.me/6283194425559?text=Halo%20saya%20ingin%20order%20Paket%20Pro" class="order-btn">Order Sekarang</a>
+    </div>
+  </section>
+
+  <section id="tentang">
+    <h2>Tentang Kami</h2>
+    <div class="card" style="max-width: 700px; margin: auto;">
+      <p><strong>DigiUMKM: </strong>Partner Digital Andalan UMKM Indonesia adalah agensi digital berbasis teknologi, hadir untuk mendukung UMKM mewujudkan mimpi besar menuju Indonesia digital yang maju, mandiri, dan kompetitif.</p>
+      <ul style="margin-top:1rem;">
+        <li><strong>Inovasi Tanpa Batas:</strong> Mengintegrasikan teknologi terkini untuk memberikan solusi yang relevan dan efektif bagi bisnis Anda.</li>
+        <li><strong>Kolaborasi Menuju Kesuksesan:</strong> Kami percaya, kesuksesan adalah hasil dari kerja sama yang solid. DigiUMKM hadir untuk tumbuh bersama UMKM di seluruh Indonesia.</li>
+        <li><strong>Kepercayaan Adalah Prioritas Kami :</strong> Kami fokus memberikan layanan berkualitas tinggi yang mendukung pertumbuhan bisnis Anda sambil menjaga kepuasan pelanggan sebagai prioritas utama.</li>
+        <ul style="margin-top:1rem;">
+        <h3> DigiUMKM: Bersama Anda, Membangun Masa Depan Digital yang Cerah!</h3>
+    
+    </ul>
+    </div>
+  </section>
+
+  <section style="padding: 3rem 1rem; background-color: #e0e7ff;">
+    <h2 style="text-align: center; margin-bottom: 2rem;">Project Kami</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; max-width: 1100px; margin: auto;">
+  
+      <!-- Toko Roti MamaYani -->
+      <div style="background: white; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); padding: 1rem; max-width: 300px; text-align: center;">
+        <img src="https://fast.image.delivery/lsoxcqq.png" alt="Toko Roti MamaYani" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+        <h3 style="color: #1e3a8a; font-weight: bold;">Toko Roti MamaYani</h3>
+        <p>Transformasi digital melalui manajemen Instagram dan desain konten menarik yang meningkatkan penjualan 30% dalam 2 bulan.</p>
+      </div>
+  
+      <!-- Warung Kopi Gembira -->
+      <div style="background: white; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); padding: 1rem; max-width: 300px; text-align: center;">
+        <img src="https://fast.image.delivery/ogszvqt.png" alt="Warung Kopi Gembira" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+        <h3 style="color: #1e3a8a; font-weight: bold;">Warung Kopi Gembira</h3>
+        <p>Pembuatan landing page dan optimasi SEO lokal sehingga pelanggan baru meningkat drastis dari hasil pencarian Google.</p>
+      </div>
+  
+      <!-- Dapur Nenek -->
+      <div style="background: white; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); padding: 1rem; max-width: 300px; text-align: center;">
+        <img src="https://fast.image.delivery/hcleoul.png" alt="Dapur Nenek" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+        <h3 style="color: #1e3a8a; font-weight: bold;">Dapur Nenek</h3>
+        <p>Kampanye digital kreatif selama Ramadan berhasil meningkatkan engagement sosial media dan konversi pesan antar makanan.</p>
+      </div>
+  
+    </div>
+  
+    <!-- Optional: Video Testimonial -->
+<div style="max-width: 800px; margin: 3rem auto 0; text-align: center;">
+    <h3 style="color: #1e3a8a; margin-bottom: 1rem;">Lihat Cerita Sukses Mereka</h3>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px;">
+      <iframe 
+        src="https://www.youtube.com/embed/rZtv219QwiA" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 10px;">
+      </iframe>
+    </div>
+  </div>
+  </section>
+  
+    </div>
+  </section>
+  
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "DigiUMKM",
+      "url": "https://www.digiumkm.id",
+      "logo": "https://www.digiumkm.id/assets/logo.png",
+      "sameAs": [
+        "https://www.instagram.com/viviwrdnaa_",
+        "https://www.facebook.com/vwrdna",
+        "https://www.linkedin.com/in/vivi-wardana-6b3958296/"
+      ],
+      "description": "Solusi digital terpercaya untuk UMKM di Indonesia — jasa desain konten, pengelolaan media sosial, dan website SEO lokal."
+    }
+    </script>
+    
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-section">
+        <h4>DigiUMKM</h4>
+        <p>Mitra digital UMKM Indonesia</p>
+      </div>
+      <div class="footer-section">
+        <h4>Layanan</h4>
+        <a href="ManajemenMediaSosial.html">Media Sosial</a>
+        <a href="konten.html">Konten & Desain</a>
+        <a href="website.html">Website & SEO</a>
+      </div>
+      <div class="footer-section">
+        <h4>Kontak</h4>
+        <a href="mailto:vwardanaa@email.com">vwardanaa@gmail.com</a>
+        <a href="https://wa.me/6283194425559">WhatsApp Owner</a>
+      </div>
+    </div>
+    <div class="bottom">&copy; 2025 DigiUMKM. Dibuat untuk kemajuan UMKM Indonesia.</div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.card').forEach(el => observer.observe(el));
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    
+  </script>
+  
+</body>
+</html>
